@@ -1,8 +1,8 @@
-let countdown = document.querySelector('.countdown');
+let TimeNow = document.querySelector('.countdown');
 
 var IntervalTimer = setInterval(function() {
 
-    
+let TimeNowF = new Date()
 
 //setting dates
     let TimeStart = new Date(Date.now()).getTime();
@@ -30,7 +30,8 @@ var IntervalTimer = setInterval(function() {
     hours = DoubleDigit(hours);
     days = DoubleDigit(days);
 
-    countdown.textContent = days + ':' + hours + ':' + minutes + ':' + seconds;
+    TimeNow.textContent = TimeNowF
+    //days + ':' + hours + ':' + minutes + ':' + seconds;
  
 // refreshing intervals    
     if (TimeDifference <= 0) {
