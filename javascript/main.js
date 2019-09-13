@@ -8,10 +8,5 @@ var IntervalTimer = setInterval(function() {
 
 // Text Content Rendering
     TimeNow.textContent = TimeString;
-    //days + ':' + hours + ':' + minutes + ':' + seconds;
  
-// refreshing intervals    
-    if (TimeDifference <= 0) {
-        clearInterval(IntervalTimer);
-    }
 }, 1000);
