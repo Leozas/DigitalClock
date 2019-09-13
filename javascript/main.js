@@ -6,14 +6,8 @@ var IntervalTimer = setInterval(function() {
 
     let TimeString = TimeTextContent.toLocaleString();
 
-// setting proper double digits 
-    seconds = DoubleDigit(seconds);
-    minutes = DoubleDigit(minutes);
-    hours = DoubleDigit(hours);
-    days = DoubleDigit(days);
-
 // Text Content Rendering
-    TimeNow.textContent = TimeString
+    TimeNow.textContent = TimeString;
     //days + ':' + hours + ':' + minutes + ':' + seconds;
  
 // refreshing intervals    
