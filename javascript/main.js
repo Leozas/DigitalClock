@@ -1,8 +1,8 @@
-let TimeNow = document.querySelector('.countdown');
+let TimeNow = document.querySelector('.Time');
 
 var IntervalTimer = setInterval(function() {
 
-let TimeNowF = new Date()
+let TimeTextContent = new Date()
 
 //setting dates
     let TimeStart = new Date(Date.now()).getTime();
@@ -30,7 +30,8 @@ let TimeNowF = new Date()
     hours = DoubleDigit(hours);
     days = DoubleDigit(days);
 
-    TimeNow.textContent = TimeNowF
+// Text Content Rendering
+    TimeNow.textContent = TimeTextContent
     //days + ':' + hours + ':' + minutes + ':' + seconds;
  
 // refreshing intervals    
