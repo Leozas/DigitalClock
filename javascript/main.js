@@ -2,11 +2,9 @@ let TimeNow = document.querySelector('.Time');
 
 var IntervalTimer = setInterval(function() {
 
-    let TimeTextContent = new Date()
+    let TimeTextContent = new Date();
 
-    let TimeSubString1 = TimeTextContent.substring(4,6)
-
-    TimeTextContent = TextSubString1
+    let TimeString = TimeTextContent.toLocaleString();
 
 // setting proper double digits 
     seconds = DoubleDigit(seconds);
@@ -15,7 +13,7 @@ var IntervalTimer = setInterval(function() {
     days = DoubleDigit(days);
 
 // Text Content Rendering
-    TimeNow.textContent = TimeTextContent
+    TimeNow.textContent = TimeString
     //days + ':' + hours + ':' + minutes + ':' + seconds;
  
 // refreshing intervals    
